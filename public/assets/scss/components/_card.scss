@@ -16,9 +16,10 @@
 		width: auto;
         height: 292px;
         margin: 0 15px;
+		height: 232px;
 
         & > i::before {
-            font-size: 25px;
+            font-size: 30px;
         }
 	}
 
@@ -45,6 +46,8 @@
 		}
         @include media-breakpoint-down(md){
             font-size: 18px;
+			margin-top: 8px;
+			margin-bottom: 15px;
         }
 	}
 
@@ -56,6 +59,7 @@
 
 		@include media-breakpoint-down(lg) {
 			font-size: 15px;
+			line-height: 1.5;
 		}
 	}
 }
