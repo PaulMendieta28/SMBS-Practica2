@@ -8529,7 +8529,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   @media (max-width: 575.98px) {
     .button {
       font-size: 15px;
-      padding: 9px 60px; } }
+      padding: 9px 30px; } }
   .button.secondary {
     padding: 14px 60px;
     background-color: #fff;
@@ -8543,7 +8543,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
       border: none; }
     @media (max-width: 575.98px) {
       .button.secondary {
-        padding: 9px 30px; } }
+        padding: 9px 30px;
+        display: flex;
+        justify-content: center; } }
   .button.transparent {
     width: 230px;
     background: transparent;
@@ -8585,7 +8587,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   .first-section-text-contact {
     text-decoration: none;
     color: #ffec17;
-    font-weight: 700; }
+    font-weight: 500; }
     .first-section-text-contact:hover {
       color: #fff;
       transition: ease-in-out 0.3s;
@@ -8648,14 +8650,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 .information-container {
   display: flex;
-  width: 100%;
-  justify-content: space-around; }
+  width: 100%; }
+  .information-container.one {
+    justify-content: flex-end; }
+  .information-container.two {
+    justify-content: space-around; }
 
 .information-image {
   background-image: url("https://livedemo00.template-help.com/wt_62466_v3/images/landing-environment-2-720x459.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   float: right;
   width: 720px;
   height: 459px; }
@@ -8686,7 +8690,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
     width: 100px;
     height: 3px;
     background: linear-gradient(to right, #ed1c94 70%, #981df0);
-    margin: 20px 0 0 0; }
+    margin: 40px 0; }
+    @media (max-width: 575.98px) {
+      .information-title::after {
+        margin: 20px 0 10px 0; } }
   @media (max-width: 767.98px) {
     .information-title {
       font-size: 24px; } }
@@ -8697,11 +8704,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   font-weight: 300; }
   @media (max-width: 767.98px) {
     .information-description {
-      font-size: 20px;
-      margin-top: 25px; } }
+      font-size: 19px; } }
   .information-description.light {
     font-size: 18px;
-    color: #838386; }
+    color: #838386;
+    margin-top: 20px; }
     @media (max-width: 767.98px) {
       .information-description.light {
         font-size: 15px;

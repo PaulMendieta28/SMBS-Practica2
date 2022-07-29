@@ -22,7 +22,7 @@
 
     @include media-breakpoint-down(sm){
         font-size: 15px;
-        padding: 9px 60px;
+        padding: 9px 30px;
     }
 
 	&.secondary {
@@ -40,6 +40,8 @@
 		}
 		@include media-breakpoint-down (sm){
 			padding: 9px 30px;
+			display: flex;
+			justify-content: center;
 			
 		}
 	}
