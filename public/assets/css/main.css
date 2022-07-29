@@ -9069,9 +9069,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center; }
-      @media (max-width: 991.98px) {
+      @media (max-width: 575.98px) {
         .footer-last-navbar {
-          width: 100%; } }
+          text-align: center;
+          position: absolute;
+          padding: 5rem;
+          margin-top: -6rem;
+          margin-left: -1rem;
+          top: 13rem;
+          left: 7.5rem;
+          list-style: none;
+          opacity: 0;
+          font-size: 2rem;
+          border: 4px solid black;
+          background-color: black;
+          border-radius: 0.25em;
+          transform: translateX(-10%);
+          transition: transform 100ms ease-in-out, opacity 200ms; } }
     .footer-last-link {
       border: none;
       margin: 0;
@@ -9083,6 +9097,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
       text-transform: uppercase;
       letter-spacing: 2px;
       padding-right: 25px; }
+    @media (max-width: 575.98px) {
+      .footer-last-hamburguer {
+        position: absolute;
+        top: 8rem;
+        left: 8rem;
+        height: 3rem;
+        width: 3rem;
+        opacity: 0;
+        z-index: 3; } }
     .footer-last-copyright {
       border: none;
       text-align: end;

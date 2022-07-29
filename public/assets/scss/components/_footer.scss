@@ -228,8 +228,22 @@
 			justify-content: space-between;
 			align-items: center;
 
-			@include media-breakpoint-down(lg) {
-				width: 100%;
+			@include media-breakpoint-down(sm) {
+				text-align: center;
+    			position: absolute;
+    			padding: 5rem;
+    			margin-top: -6rem;
+    			margin-left: -1rem;
+    			top: 13rem;
+    			left: 7.5rem;
+    			list-style: none;
+    			opacity: 0;
+    			font-size: 2rem;
+    			border: 4px solid black;
+    			background-color: black;
+    			border-radius: 0.25em;
+    			transform: translateX(-10%);
+    			transition: transform 100ms ease-in-out, opacity 200ms;
 			}
 		}
 		&-link {
@@ -243,6 +257,17 @@
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			padding-right: 25px;
+		}
+		&-hamburguer{
+			@include media-breakpoint-down(sm){
+				position: absolute;
+    			top: 8rem;
+    			left: 8rem;
+    			height: 3rem;
+    			width: 3rem;
+    			opacity: 0;
+    			z-index: 3;
+			}
 		}
 
 		&-copyright {
