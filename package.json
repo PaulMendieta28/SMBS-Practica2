@@ -1,0 +1,18 @@
+{
+  "name": "practica-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "watch-scss": "node-sass --source-map ./public/assets/css --watch ./public/assets/scss -o ./public/assets/css"
+  },
+  "author": "JPMR",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.1"
+  }
+}

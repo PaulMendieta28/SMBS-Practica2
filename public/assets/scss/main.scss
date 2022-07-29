@@ -1,0 +1,15 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/variables';
+@import 'page/home';
+@import 'components/banner';
+@import 'components/button';
+@import 'components/first-section';
+@import 'components/card';
+@import 'components/information'; //corregir responsive
+@import 'components/service'; //corregir responsive
+@import 'components/second-section';  //corregir responsive
+@import 'components/team';  //corregir responsive
+@import 'components/footer';  //corregir responsive
+@import 'components/modal';  //corregir responsive

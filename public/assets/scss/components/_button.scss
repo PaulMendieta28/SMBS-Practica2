@@ -1,0 +1,58 @@
+.button {
+	font-family: $font-primary;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: $violet;
+	color: $white;
+	padding: 14px 38px;
+	margin-top: 25px;
+
+	&:hover {
+		background-color: $purple-light;
+		color: $white;
+		transition: ease-in-out 0.5s;
+		cursor: pointer;
+		border: none;
+	}
+
+    @include media-breakpoint-down(sm){
+        font-size: 15px;
+        padding: 9px 30px;
+    }
+
+	&.secondary {
+		padding: 14px 60px;
+		background-color: $white;
+		color: $black;
+
+		&:hover {
+			background-color: $purple-light;
+			color: $white;
+			transition: all ease-in-out 0.5s;
+			cursor: pointer;
+			border: none;
+		}
+		@include media-breakpoint-down (sm){
+			padding: 9px 30px;
+		}
+	}
+
+	&.transparent {
+		width: 230px;
+		background: transparent;
+		border: 2px solid $white;
+		text-align: center;
+		&:hover {
+			background-color: $purple-darken;
+			border: none;
+		}
+
+		@include media-breakpoint-down(lg) {
+			width: 210px;
+		}
+	}
+}

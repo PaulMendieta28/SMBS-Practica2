@@ -1,0 +1,61 @@
+.card {
+	width: 390px;
+	height: 365px;
+	padding: 40px 45px 45px;
+	border: 0.5px solid $gray-semi-dark;
+	border-radius: 8px;
+
+	@include media-breakpoint-down(lg) {
+		width: 320px;
+		height: 280px;
+		padding: 20px 15px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 20px 15px;
+		width: auto;
+        height: 292px;
+        margin: 0 15px;
+
+        & > i::before {
+            font-size: 25px;
+        }
+	}
+
+	&:hover {
+		background-color: $gray-light;
+		border: 1px solid $gray-light;
+		transition: ease-in-out 0.5s;
+	}
+
+	&-title {
+		font-size: 24px;
+		font-family: $font-secondary;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		color: $black;
+
+		&::after {
+			content: '';
+			display: block;
+			margin-top: 30px;
+			width: 100%;
+			height: 1px;
+			background: $gray-semi-dark;
+		}
+        @include media-breakpoint-down(md){
+            font-size: 18px;
+        }
+	}
+
+	&-paragraph {
+		font-size: 18px;
+		font-family: $font-secondary;
+		font-weight: 300;
+		color: $gray-darken;
+
+		@include media-breakpoint-down(lg) {
+			font-size: 15px;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+.team {
+	width: 100%;
+	padding: 80px 25px;
+
+	&-title {
+		text-transform: uppercase;
+		font-size: 34px;
+		font-family: $font-primary;
+		text-align: center;
+		font-weight: 400;
+		letter-spacing: 2px;
+
+		&::after {
+			content: '';
+			display: block;
+			background: linear-gradient(to right, $violet 70%, $purple-light);
+			width: 100px;
+			height: 1px;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			opacity: 0.25;
+		}
+	}
+
+	&.card-team {
+		margin-top: 40px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	&-image {
+		width: 270px;
+		height: 270px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 50%;
+	}
+
+	&-name {
+		text-decoration: none;
+		font-size: 19px;
+		color: $violet;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	&-job {
+		font-size: 18px;
+		font-family: $font-secondary;
+		color: $gray-darken;
+		font-weight: 300;
+		font-style: italic;
+	}
+
+	&-icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 30px;
+		width: 100%;
+
+		&.icon {
+			padding: 0;
+			list-style: none;
+			color: $gray-semi-dark;
+			color: $gray-semi-dark;
+			&:hover {
+				transition: color ease-in-out 0.2s;
+				color: $violet;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
