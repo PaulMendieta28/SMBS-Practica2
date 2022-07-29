@@ -11,63 +11,27 @@
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 
-	/* Modal Content (image) */
-	&-content {
+	.modal-content {
 		margin: auto;
 		display: block;
-		width: 720px;
-		height: 720px;
-		opacity: 1;
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-		object-fit: cover;
-		-webkit-animation-name: zoom;
-		-webkit-animation-duration: 0.6s;
-		animation-name: zoom;
-		animation-duration: 0.6s;
+		width: 80%;
+		opacity: 1 !important;
+		max-width: 1200px;
 	}
 
-	/* Caption of Modal Image */
-	&-caption {
+	.modal-caption {
 		margin: auto;
 		display: block;
-		width: 100px;
-		height: 100px;
+		width: 80%;
+		max-width: 1200px;
 		text-align: center;
 		color: white;
 		font-weight: 700;
 		font-size: 1em;
 		margin-top: 32px;
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-		-webkit-animation-name: zoom;
-		-webkit-animation-duration: 0.6s;
-		animation-name: zoom;
-		animation-duration: 0.6s;
 	}
 
-	@-webkit-keyframes zoom {
-		from {
-			-webkit-atransform: scale(0);
-		}
-		to {
-			-webkit-transform: scale(1);
-		}
-	}
-
-	@keyframes zoom {
-		from {
-			transform: scale(0);
-		}
-		to {
-			transform: scale(1);
-		}
-	}
-
-	/* The Close Button */
-	&-close {
+	.modal-close {
 		position: absolute;
 		top: 15px;
 		right: 35px;
@@ -76,11 +40,15 @@
 		font-weight: bold;
 		transition: 0.3s;
 
-		&:hover,
-		&:focus {
+		&:hover{
 			color: #bbb;
-			text-decoration: none;
-			cursor: pointer;
+  			text-decoration: none;
+  			cursor: pointer;
 		}
-	}
+		&:focus{
+			color: #bbb;
+  			text-decoration: none;
+  			cursor: pointer;
+		}
+	  }
 }

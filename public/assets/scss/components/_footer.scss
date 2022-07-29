@@ -80,15 +80,14 @@
 		}
 
 		&-image {
-			margin: 0;
-			padding: 0;
-			width: 80px;
+			width: 300px;
+  			border-radius: 5px;
+  			cursor: pointer;
+  			transition: 0.3s;
+  			margin: 0;
+  			padding: 0;
+  			width: 80px;
 			height: 80px;
-			display: block;
-			background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
-			object-fit: cover;
 		}
 
 		&-modal {

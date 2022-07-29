@@ -22,13 +22,14 @@
 
     @include media-breakpoint-down(sm){
         font-size: 15px;
-        padding: 9px 30px;
+        padding: 9px 60px;
     }
 
 	&.secondary {
 		padding: 14px 60px;
 		background-color: $white;
 		color: $black;
+		width: 230px;
 
 		&:hover {
 			background-color: $purple-light;
@@ -39,6 +40,7 @@
 		}
 		@include media-breakpoint-down (sm){
 			padding: 9px 30px;
+			
 		}
 	}
 

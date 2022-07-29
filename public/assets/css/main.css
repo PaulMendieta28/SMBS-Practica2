@@ -8529,11 +8529,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   @media (max-width: 575.98px) {
     .button {
       font-size: 15px;
-      padding: 9px 30px; } }
+      padding: 9px 60px; } }
   .button.secondary {
     padding: 14px 60px;
     background-color: #fff;
-    color: #29293a; }
+    color: #29293a;
+    width: 230px; }
     .button.secondary:hover {
       background-color: #981df0;
       color: #fff;
@@ -8716,14 +8717,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
       flex-direction: column; } }
   .service-container {
     margin: 80px 0;
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .service.reverse {
     flex-direction: row-reverse; }
     @media (max-width: 991.98px) {
       .service.reverse {
         flex-direction: column; } }
   .service-text {
-    margin: 0px 15px; }
+    width: 570px; }
+    @media (max-width: 575.98px) {
+      .service-text {
+        margin: 0px 15px; } }
   .service-title {
     font-size: 48px;
     font-family: "Oswald", sans-serif;
@@ -8733,11 +8740,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
     .service-title::after {
       content: '';
       display: block;
-      margin: 20px 0;
+      margin: 40px 0;
       width: 100px;
       height: 3px;
       background: linear-gradient(to right, #ed1c94 70%, #981df0);
       padding: 0; }
+      @media (max-width: 575.98px) {
+        .service-title::after {
+          margin: 20px 0px 10px 0; } }
     @media (max-width: 575.98px) {
       .service-title {
         font-size: 24px; } }
@@ -8750,7 +8760,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
     max-width: 450px; }
     @media (max-width: 575.98px) {
       .service-paragraph {
-        max-width: 630px;
+        max-width: 343px;
         font-size: 15px;
         line-height: 1.5; } }
   .service-image {
@@ -8965,15 +8975,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
           background: purple;
           color: purple; }
     .footer-gallery-image {
+      width: 300px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
       margin: 0;
       padding: 0;
       width: 80px;
-      height: 80px;
-      display: block;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      object-fit: cover; }
+      height: 80px; }
     .footer-gallery-modal {
       width: 100%;
       cursor: pointer;
@@ -9152,54 +9161,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.8);
-  /* Black w/ opacity */
-  /* Modal Content (image) */
-  /* Caption of Modal Image */
-  /* The Close Button */ }
-  .modal-content {
+  /* Black w/ opacity */ }
+  .modal .modal-content {
     margin: auto;
     display: block;
-    width: 720px;
-    height: 720px;
-    opacity: 1;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s; }
-  .modal-caption {
+    width: 80%;
+    opacity: 1 !important;
+    max-width: 1200px; }
+  .modal .modal-caption {
     margin: auto;
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    max-width: 1200px;
     text-align: center;
     color: white;
     font-weight: 700;
     font-size: 1em;
-    margin-top: 32px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s; }
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-atransform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
-
-@keyframes zoom {
-  from {
-    transform: scale(0); }
-  to {
-    transform: scale(1); } }
-  .modal-close {
+    margin-top: 32px; }
+  .modal .modal-close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -9207,7 +9186,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s; }
-    .modal-close:hover, .modal-close:focus {
+    .modal .modal-close:hover {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer; }
+    .modal .modal-close:focus {
       color: #bbb;
       text-decoration: none;
       cursor: pointer; }
