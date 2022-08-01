@@ -8562,6 +8562,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
         width: 210px;
         font-size: 18px; } }
   .button.footer {
+    font-size: 16px;
     border: none;
     margin-top: 0;
     margin-left: -40px;
@@ -9013,20 +9014,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   .footer-gallery {
     padding: 0;
     margin-top: 20px;
-    margin-right: 0;
     display: grid;
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px; }
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
     @media (max-width: 575.98px) {
       .footer-gallery {
         padding: 0;
         margin-bottom: 40px; } }
     .footer-gallery-container {
       position: relative;
-      max-width: 99px;
-      max-height: 99px;
+      max-width: auto;
+      max-height: auto;
       z-index: 1; }
       .footer-gallery-container:hover {
         background: #981df0; }
@@ -9034,21 +9034,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
         content: '+';
         z-index: -1;
         position: absolute;
-        display: block;
         font-size: 20px;
-        margin: 28px 34px; }
+        margin: 28px 34px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0; }
         .footer-gallery-container::before:hover {
           background: purple;
           color: purple; }
     .footer-gallery-image {
-      width: 300px;
       cursor: pointer;
       transition: 0.3s;
       margin: 0;
       padding: 0;
-      width: 98px;
-      height: 98px;
-      background-size: cover; }
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      object-position: center; }
     .footer-gallery-modal {
       width: 100%;
       cursor: pointer;
@@ -9119,7 +9122,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 15px; }
+      margin-top: 15px;
+      max-width: 100%; }
     .footer-newsletter-text {
       font-size: 18px;
       font-family: "Lato", sans-serif;
@@ -9130,10 +9134,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
           font-size: 15px;
           max-width: 320px; } }
     .footer-newsletter-input {
-      padding: 10px 18px;
-      padding-left: 25px;
+      padding: 12px 18px 12px 25px;
       border: none;
-      border-radius: 35px; }
+      border-radius: 35px;
+      width: 260px; }
   .footer-last {
     margin-top: 50px;
     padding: 50px 0px 0px;

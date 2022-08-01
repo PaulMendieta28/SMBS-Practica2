@@ -48,12 +48,11 @@
 	&-gallery {
 		padding: 0;
 		margin-top: 20px;
-		margin-right: 0;
 		display: grid;
-		grid-template-columns: repeat(3, 80px);
+		grid-template-columns: repeat(3, 100px);
 		grid-template-rows: repeat(2, 1fr);
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
 
 		@include media-breakpoint-down(sm) {
 			padding: 0;
@@ -62,8 +61,8 @@
 
 		&-container {
 			position: relative;
-			max-width: 99px;
-			max-height: 99px;
+			max-width: auto;
+			max-height: auto;
 			z-index: 1;
 			&:hover {
 				background: $purple-light;
@@ -72,9 +71,12 @@
 				content: '+';
 				z-index: -1;
 				position: absolute;
-				display: block;
 				font-size: 20px;
 				margin: 28px 34px;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
 
 				&:hover {
 					background: purple;
@@ -84,14 +86,14 @@
 		}
 
 		&-image {
-			width: 300px;
   			cursor: pointer;
   			transition: 0.3s;
   			margin: 0;
   			padding: 0;
-  			width: 98px;
-			height: 98px;
-			background-size: cover;
+  			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			object-position: center;
 		}
 
 		&-modal {
@@ -202,6 +204,7 @@
 			justify-content: center;
 			align-items: center;
 			margin-top: 15px;
+			max-width: 100%;
 		}
 
 		&-text {
@@ -217,10 +220,10 @@
 		}
 
 		&-input {
-			padding: 10px 18px;
-			padding-left: 25px;
+			padding: 12px 18px 12px 25px;
 			border: none;
 			border-radius: 35px;
+			width: 260px;
 		}
 	}
 // Footer Last
