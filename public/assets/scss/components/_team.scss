@@ -1,10 +1,15 @@
 .team {
 	width: 100%;
-	padding: 80px 25px;
+	padding: 125px 0px;
+
+	&-container-cards{
+		margin: 85px 51.5px 0px 51.5px;
+		padding: 0px 15px;
+	}
 
 	&-title {
 		text-transform: uppercase;
-		font-size: 34px;
+		font-size: 48px;
 		font-family: $font-primary;
 		text-align: center;
 		font-weight: 400;
@@ -16,15 +21,13 @@
 			background: linear-gradient(to right, $violet 70%, $purple-light);
 			width: 100px;
 			height: 1px;
-			margin-top: 20px;
-			margin-left: auto;
-			margin-right: auto;
+			margin: 40px auto 0px auto;
 			opacity: 0.25;
 		}
 	}
 
-	&.card-team {
-		margin-top: 40px;
+	&-card {
+		margin-top: 40px 15px 0px 15px;
 		padding: 0;
 		display: flex;
 		flex-direction: column;
@@ -34,8 +37,8 @@
 	}
 
 	&-image {
-		width: 270px;
-		height: 270px;
+		width: 300px;
+		height: 300px;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -43,8 +46,9 @@
 	}
 
 	&-name {
+		font-family: $font-secondary;
 		text-decoration: none;
-		font-size: 19px;
+		font-size: 24px;
 		color: $violet;
 		text-align: center;
 		margin-top: 20px;

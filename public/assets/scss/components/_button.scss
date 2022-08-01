@@ -11,6 +11,9 @@
 	padding: 14px 38px;
 	margin-top: 25px;
 	display: inline-block;
+	width: 252px;			
+	display: flex;
+	justify-content: center;
 
 	&:hover {
 		background-color: $purple-light;
@@ -24,6 +27,10 @@
         font-size: 15px;
         padding: 9px 30px;
     }
+	
+	&.primary{
+		width: 230px;
+	}
 
 	&.secondary {
 		padding: 14px 60px;
@@ -40,8 +47,6 @@
 		}
 		@include media-breakpoint-down (sm){
 			padding: 9px 30px;
-			display: flex;
-			justify-content: center;
 			
 		}
 	}
@@ -58,6 +63,16 @@
 
 		@include media-breakpoint-down(lg) {
 			width: 210px;
+		}
+	}
+	&.footer {
+		border: none;
+		margin-top: 0;
+		margin-left: -40px;
+		width: 158;
+		padding: 11px 35px;
+
+		@include media-breakpoint-down(lg) {
 		}
 	}
 }
