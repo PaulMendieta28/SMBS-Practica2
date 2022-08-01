@@ -46,17 +46,19 @@
 			background: linear-gradient(to right, $violet 70%, $purple-light);
 			padding: 0;
 			@include media-breakpoint-down(sm){
-				margin: 20px 0px 10px 0;
+				margin: 20px 0px;
 			}
 		}
 		
 		@include media-breakpoint-down(sm) {
 			font-size: 24px;
+			font-weight: 500;
 		}
 	}
 
 	&-paragraph {
 		font-family: $font-secondary;
+
 		font-size: 18px;
 		color: $gray-darken;
 		font-weight: 300;

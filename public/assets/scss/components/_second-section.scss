@@ -3,6 +3,10 @@
 	padding: 125px 0;
 	background-color: $gray-light;
 
+	@include media-breakpoint-down(sm){
+		padding: 60px 0;
+	}
+
 	&-title {
 		padding: 0 15px;
 		text-align: center;
@@ -43,11 +47,19 @@
 		background-image: url('https://livedemo00.template-help.com/wt_62466_v3/images/bg-09.jpg');
 		background-size: cover;
 		background-position: center center;
+		@include media-breakpoint-down(sm){
+			padding: 60px 0;
+			background-size: cover;
+			background-position: center center;
+		}
 	}
 
 	&.background {
 		background: linear-gradient(to right, $purple-dark 20%, $violet);
 		padding: 100px 0;
+		@include media-breakpoint-down(sm){
+			padding: 60px 0;
+		}
 	}
 
 	&-text-consultation {
@@ -88,11 +100,13 @@
 			font-weight: 300;
 
 			@include media-breakpoint-down(lg) {
-				max-width: 500px;
+				max-width: 340px;
+				font-size: 18px;
 			}
 			@include media-breakpoint-down(sm) {
-				max-width: 500px;
+				max-width: 340px;
 				text-align: center;
+				font-size: 18px;
 			}
 		}
 	}

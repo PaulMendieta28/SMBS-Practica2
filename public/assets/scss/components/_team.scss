@@ -2,9 +2,14 @@
 	width: 100%;
 	padding: 125px 0px;
 
+	@include media-breakpoint-down(sm){
+		padding: 60px 0;
+	}
+
 	&-container-cards{
-		margin: 85px 51.5px 0px 51.5px;
-		padding: 0px 15px;
+		margin-top: 85px;
+		padding: 0;
+		justify-content: space-between;
 	}
 
 	&-title {
@@ -14,6 +19,10 @@
 		text-align: center;
 		font-weight: 400;
 		letter-spacing: 2px;
+
+		@include media-breakpoint-down(sm){
+			font-size: 24px;
+		}
 
 		&::after {
 			content: '';
@@ -27,13 +36,17 @@
 	}
 
 	&-card {
-		margin-top: 40px 15px 0px 15px;
 		padding: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		height: fit-content;
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&-image {
@@ -43,6 +56,11 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 		border-radius: 50%;
+
+		@include media-breakpoint-down(sm){
+			width: 270px;
+			height: 270px;
+		}
 	}
 
 	&-name {
@@ -52,6 +70,10 @@
 		color: $violet;
 		text-align: center;
 		margin-top: 20px;
+
+		@include media-breakpoint-down(sm){
+			font-size: 19px;
+		}
 	}
 
 	&-job {
@@ -60,19 +82,26 @@
 		color: $gray-darken;
 		font-weight: 300;
 		font-style: italic;
+		@include media-breakpoint-down(sm){
+			font-size: 18px;
+		}
 	}
 
 	&-icons {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: 15px;
 		padding: 0 30px;
 		width: 100%;
 
 		&.icon {
+			font-size: 20px;
+			margin: 0 10px;
+			width: auto;
 			padding: 0;
 			list-style: none;
-			color: $gray-semi-dark;
+			text-align: center;
 			color: $gray-semi-dark;
 			&:hover {
 				transition: color ease-in-out 0.2s;

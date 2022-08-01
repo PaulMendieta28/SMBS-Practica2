@@ -61,18 +61,18 @@
 			border: none;
 		}
 
-		@include media-breakpoint-down(lg) {
+		@include media-breakpoint-down(sm) {
 			width: 210px;
+			font-size: 18px;
 		}
 	}
 	&.footer {
 		border: none;
 		margin-top: 0;
 		margin-left: -40px;
-		width: 158;
+		width: 158px;
 		padding: 11px 35px;
-
-		@include media-breakpoint-down(lg) {
-		}
+		background-color: $violet;
+		text-align: center;
 	}
 }
