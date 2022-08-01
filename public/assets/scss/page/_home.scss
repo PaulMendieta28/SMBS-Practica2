@@ -7,7 +7,11 @@
 		align-items: center;
 		background-color: $gray-light;
 
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+		}
+
+		@include media-breakpoint-down(lg) {
 			flex-direction: column;
 		}
 	}
@@ -34,7 +38,7 @@
 
 		@include media-breakpoint-down(sm) {
 			justify-content: center;
-			padding: 80px 0;
+			padding: 60px 0;
 		}
 	}
 
@@ -58,7 +62,10 @@
     	    flex-direction: column-reverse;
     	    justify-content: flex-start;
     	    align-items: center;
-    	    padding: 80px 20px;
+    	    padding: 60px 0px;
     	}
+	}
+	input {
+		font-family: $font-secondary;
 	}
 }

@@ -1,30 +1,30 @@
 .footer {
-	padding: 40px 30px;
+	align-items: flex-start;
 	background: $black;
 	color: $white;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
 	flex-wrap: wrap;
-	width: 100%;
 	height: auto;
+	justify-content: space-between;
+	padding: 40px 30px;
+	width: 100%;
 
 	&-container {
-		width: 100%;
 		margin-top: 40px;
+		width: 100%;
 
 		@include media-breakpoint-down(sm){
-			max-width: 350px;
 			margin-top: 0;
+			max-width: 350px;
 		}
 	}
 
 	&-title {
 		font-family: $font-primary;
-		text-transform: uppercase;
 		font-size: 24px;
 		font-weight: 400;
 		letter-spacing: 2px;
+		text-transform: uppercase;
 
 		@include media-breakpoint-down(sm){
 			font-size: 17px;
@@ -79,8 +79,7 @@
 				left: 0;
 
 				&:hover {
-					background: purple;
-					color: purple;
+					background-color: $purple-light;
 				}
 			}
 		}
@@ -200,11 +199,13 @@
 		width: 100%;
 
 		&-form {
-			display: flex;
-			justify-content: center;
 			align-items: center;
-			margin-top: 15px;
+			display: flex;
+			font-family: $font-secondary;
+			justify-content: center;
+			margin-top: 20px;
 			max-width: 100%;
+
 		}
 
 		&-text {

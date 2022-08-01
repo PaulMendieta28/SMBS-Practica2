@@ -26,10 +26,21 @@
     @include media-breakpoint-down(sm){
         font-size: 15px;
         padding: 9px 30px;
+		width: 210px;
     }
+
+	@include media-breakpoint-down(lg){
+		font-size: 15px;
+		width: 223px;
+	}
 	
 	&.primary{
 		width: 230px;
+
+		@include media-breakpoint-down(sm){
+			height: 41.5px;
+			width: 210px;
+		}
 	}
 
 	&.secondary {
@@ -67,6 +78,7 @@
 		}
 	}
 	&.footer {
+		height: 48px;
 		font-size: 16px;
 		border: none;
 		margin-top: 0;
@@ -75,5 +87,17 @@
 		padding: 11px 35px;
 		background-color: $violet;
 		text-align: center;
+
+		@include media-breakpoint-down(sm){
+			font-size: 14px;
+		}
+
+		&:hover {
+			background-color: $purple-light;
+			color: $white;
+			transition: ease-in-out 0.5s;
+			cursor: pointer;
+			border: none;
+		}
 	}
 }

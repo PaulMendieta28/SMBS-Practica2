@@ -8,11 +8,11 @@
 	}
 
 	&-container {
-		margin: 80px 0;
-		width: 100%;
+		align-items: center;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		margin: 80px 0;
+		width: 100%;
 	}
 
 	&.reverse {
@@ -25,6 +25,7 @@
 
 	 &-text {
 	 	width: 570px;
+
 		@include media-breakpoint-down(sm){
 			margin: 0px 15px;
 		}
@@ -38,50 +39,52 @@
 		padding: 0;
 
 		&::after {
+			background: linear-gradient(to right, $violet 70%, $purple-light);
 			content: '';
 			display: block;
-			margin: 40px 0;
-			width: 100px;
 			height: 3px;
-			background: linear-gradient(to right, $violet 70%, $purple-light);
+			margin-top: 40px;
 			padding: 0;
+			width: 100px;
+
 			@include media-breakpoint-down(sm){
-				margin: 20px 0px;
+				margin-top: 20px;
 			}
 		}
 		
 		@include media-breakpoint-down(sm) {
 			font-size: 24px;
-			font-weight: 500;
+			font-weight: 400;
 		}
 	}
 
 	&-paragraph {
-		font-family: $font-secondary;
-
-		font-size: 18px;
 		color: $gray-darken;
+		font-family: $font-secondary;
+		font-size: 18px;
 		font-weight: 300;
-		padding: 0;
+		margin-top: 20px;
 		max-width: 450px;
+		padding: 0;
 
 		@include media-breakpoint-down(sm) {
-			max-width: 343px;
 			font-size: 15px;
 			line-height: 1.5;
+			margin-top: 10px;
+			max-width: 343px;
 		}
 	}
 
 	&-image {
-		height: 570px;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-		object-fit: cover;
+		height: 570px;
 		width: 100%;
 
 		@include media-breakpoint-down(sm){
 			height: 300px;
+			width: auto;
 		}
 	}
 }

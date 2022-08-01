@@ -25,13 +25,17 @@
 		}
 
 		&::after {
+			background: linear-gradient(to right, $violet 70%, $purple-light);
 			content: '';
 			display: block;
-			background: linear-gradient(to right, $violet 70%, $purple-light);
-			width: 100px;
 			height: 1px;
 			margin: 40px auto 0px auto;
 			opacity: 0.25;
+			width: 100px;
+
+			@include media-breakpoint-down(sm){
+				margin-top: 20px;
+			}
 		}
 	}
 

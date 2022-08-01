@@ -32,13 +32,18 @@
 
 		&.testimonials {
 			color: $white;
+			
 			&::after {
+				background: linear-gradient(to right, $violet 70%, $purple-light);
                 content: '';
                 display: block;
                 width: 100px;
                 height: 1px;
-                background: linear-gradient(to right, $violet 70%, $purple-light);
                 margin: 40px auto 18px auto;
+
+				@include media-breakpoint-down(sm){
+					margin-top: 20px;
+				}
 			}
 		}
 	}
@@ -47,10 +52,9 @@
 		background-image: url('https://livedemo00.template-help.com/wt_62466_v3/images/bg-09.jpg');
 		background-size: cover;
 		background-position: center center;
+
 		@include media-breakpoint-down(sm){
 			padding: 60px 0;
-			background-size: cover;
-			background-position: center center;
 		}
 	}
 

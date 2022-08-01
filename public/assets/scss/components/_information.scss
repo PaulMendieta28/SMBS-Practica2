@@ -5,6 +5,9 @@
 
         &.one{
             justify-content: flex-end;
+            @include media-breakpoint-down(sm){
+                justify-content: center;
+            }
         }
         &.two{
             justify-content: space-around;
@@ -16,24 +19,24 @@
         background-size: cover;
         background-repeat: no-repeat;
         float: right;
-        width: 720px;
         height: 459px;
-
-        @include media-breakpoint-down(lg) {
-            width: 100%;
-            order: 2;
-        }
+        width: 720px;
 
         @include media-breakpoint-down(sm) {
-            width: 345px;
-            height: 220px;
+            height: 218.66px;
+            width: 343px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            height: 411.19px;
+            width: 645px;
         }
     }
 
     &-text {
         width: 570px;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(sm) {
             margin-bottom: 50px;
             width: 350px;
         }
@@ -42,22 +45,31 @@
     &-title {
         font-family: $font-primary;
         font-size: 48px;
-        letter-spacing: 2px;
         font-weight: 400;
+        letter-spacing: 2px;
 
         &::after {
+            background: linear-gradient(to right, $violet 70%, $purple-light);
             content: '';
             display: block;
-            width: 100px;
             height: 3px;
-            background: linear-gradient(to right, $violet 70%, $purple-light);
             margin: 40px 0 ;
+            width: 100px;
+
             @include media-breakpoint-down(sm){
                 margin: 20px 0 10px 0;
             }
+
+            @include media-breakpoint-down(lg){
+                margin: 20px 0 0 0;
+            }
         }
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(sm){
             font-size: 24px;
+        }
+
+        @include media-breakpoint-down(lg){
+            font-size: 28px;
         }
     }
 
@@ -66,19 +78,23 @@
         font-size: 24px;
         font-weight: 300;
         
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(sm){
+            font-size: 19px;
+        }
+
+        @include media-breakpoint-down(lg){
             font-size: 19px;
         }
 
         &.light {
-            font-size: 18px;
             color: $gray-darken;
+            font-size: 18px;
             margin-top: 20px;
             
-            @include media-breakpoint-down(md){
+            @include media-breakpoint-down(sm){
                 font-size: 15px;
-                line-height: 1.7;
                 letter-spacing: 1.5;
+                line-height: 1.7;
             }
         }
     }
